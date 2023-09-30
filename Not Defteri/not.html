@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Defteri</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="https://e1.pngegg.com/pngimages/29/475/png-clipart-resources-notebook-icon-thumbnail.png"
+        type="image/png">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="baslik">
+                <h1>Not Tutma Uygulamasına Hoşgeldiniz</h1>
+            </div>
+            <div class="header-buttons" id="butonlar">
+                <button id="notEkleButton">Not Ekle</button>
+                <button id="tamamlananlariGosterButton">Tamamlananları Göster</button>
+                <button id="tumNotlariGosterButton">Tümünü Göster</button>
+                <button id="tumunuSilButton">Tümünü Sil</button>
+            </div>
+        </div>
+    </header>
+
+    </div>
+    <div class="not-form">
+        <input type="text" id="notBaslik" placeholder="Başlığı Girin">
+        <textarea id="notIcerik" cols="30" rows="5" placeholder="Notunuzu Girin.."></textarea>
+        <button id="kaydetButton">Kaydet</button>
+    </div>
+
+    <div class="blur-overlay" id="overlay"></div> <!--Overlay oluşturduk-->
+
+
+    <table class="notlar" id="notlarTablosu">
+        <thead>
+            <tr>
+                <th>Not Başlığı</th>
+                <th>Not İçeriği</th>
+                <th>Yazıldığı Tarih</th>
+                <th>İşlem</th>
+                <th>Düzenle</th>
+                <th>Durum</th>
+            </tr>
+        </thead>
+        <tbody id="notlarGovdesi">
+        </tbody>
+    </table>
+
+    <div class="popup" id="popup">
+        <p>Notu kaydetmek istediğinize emin misiniz ?</p>
+        <button class="kaydet">Kaydet</button>
+        <button class="duzenle">Düzenle</button>
+    </div>
+
+    <div class="uyariKaydet" id="uyariKaydet">
+        <p>Lütfen Başlık ve Notunuzu Girin</p>
+        <button class="tamam" id="tamamButton">Tamam</button>
+    </div>
+
+
+    <div class="silPopup" id="silPopup"> <!--Sil pop-up yaptık-->
+        <p>Notu Silmek İstediğinize Emin misiniz ?</p>
+        <button class="sil">Sil</button>
+        <button class="iptal">İptal</button>
+    </div>
+
+    <div class="tumunuSilPopup" id="tumunuSilPopup">
+        <p>Tüm Notları Silmek İstediğinize Emin misiniz ?</p>
+        <button class="tumunuSilPopupButton" id="tumunuSil">Sil</button>
+        <button class="tumunuİptalPopupButton" id="tumunuİptal">İptal</button>
+    </div>
+
+
+    <script src="nott.js"></script>
+</body>
+
+
+</html>
